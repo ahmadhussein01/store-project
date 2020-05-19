@@ -18,31 +18,31 @@ We need to design a system for an online store and we need your help to set the 
 - Every department has a set of different products and every product has different properties such as the price, name, department's name, and more.
 
 ### Requirements
-* **Task**-1: Write 3 object products that have at least 3 properties.
-**Example:**
-```javascript
-let handbag = {
-	color: "black",
-	size:"small",
-	price:20
-}
-```
+* **Task-1:** Write 3 object products that have at least 3 properties.
+    **Example:**
+    ```javascript
+    let handbag = {
+        color: "black",
+        size:"small",
+        price:20
+    };
+    ```
 * **Task-2:** Your customers will be happier if they can see your products. Can you add another property to your product object for the image URL?
-**Example:**
+    **Example:**
 	```javascript
-	handbag.imgSrc = 'http://yourImagePathHere'
+	handbag.imgSrc = 'http://yourImagePathHere';
 	```
 
 * **Task-3:** Cool, Now describe your product to help customers find it by printing out the value of your object properties using the different ways that you have learned:
 	**Example:**
 	```javascript
-	console.log(`Big sale on The ${handbag.color} handbags, they are available now just for ${handbag['price']}$`)
+	console.log(`Big sale on The ${handbag.color} handbags, they are available now just for ${handbag['price']}$`);
 	```
 * **Task-4:** Add one more property to your object using dot notation assignment.
- **Example:**
-```javascript
-handbag.brand = "chanel";
-```
+    **Example:**
+    ```javascript
+    handbag.brand = "chanel";
+    ```
 
 * **Task-5:** Create an array named jewelry for the jewelry category.
 * **Task-6:** Add three subcategories (rings, bracelets and earrings) as objects in this array Every subcategory has three properties which are name, inventory (which is the number of the products in the current subcategory), and price.
