@@ -9,7 +9,7 @@ There's nothing to worry about, just try to do your best and enjoy the work.
 - Commit **working** code early and often (it is the best way that you can save your work).
 - Leave comments that describe your work.
 - Read the tasks carefully, and do them one by one. 
-- After you are finished, submit a pull request following the steps that you have learned (guidelines for how to submit a pull request are in Pull Request[Lecture Notes]).
+- After you are finished, submit a pull request following the steps that you have learned (guidelines for how to submit a pull request are in [Pull Request[Lecture Notes]](https://learn.makeen.ps/courses/take/introduction-to-javascript/multimedia/12105625-day-3-pull-requests-lecture-notes)).
 
 # Online Store Part-1
 ### Project Description 
@@ -30,7 +30,7 @@ We need to design a system for an online store and we need your help to set the 
 * **Task-2:** Your customers will be happier if they can see your products. Can you add another property to your product object for the image URL?
     **Example:**
 	```javascript
-	handbag.imgSrc = 'https://yourImagePathHere';
+	handbag.imgSrc = 'https://5.imimg.com/data5/FD/LW/TZ/SELLER-72438214/centurybags-cotton-shopping-bag-500x500.jpg';
 	```
 
 * **Task-3:** Cool, Now describe your product to help customers find it by printing out the value of your object properties using dot and bracket notation:
