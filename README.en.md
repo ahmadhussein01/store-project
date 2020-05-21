@@ -30,7 +30,7 @@ We need to design a system for an online store and we need your help to set the 
 * **Task-2:** Your customers will be happier if they can see your products. Can you add another property to your product object for the image URL?
     **Example:**
 	```javascript
-	handbag.imgSrc = 'https://5.imimg.com/data5/FD/LW/TZ/SELLER-72438214/centurybags-cotton-shopping-bag-500x500.jpg';
+	handbag.imgSrc = 'https://p4.wallpaperbetter.com/wallpaper/233/2/545/church-cross-holy-city-jerusalem-wallpaper-preview.jpg';
 	```
 
 * **Task-3:** Cool, Now describe your product to help customers find it by printing out the value of your object properties using dot and bracket notation:
