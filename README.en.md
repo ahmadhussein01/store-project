@@ -1,54 +1,36 @@
-# Week 2  Project
+# Week 3  Project
 
 ## Guidelines
 
-The projects are meant to give you an idea of how well you understand, or can figure out, the material that you covered recently.
-There's nothing to worry about, just try to do your best and enjoy the work.
+This is phase 2 of the store project. In this phase you will optimize your code using the new material you took in week 3. Try to do your best and enjoy the work.
 
-- Fork this repo and clone down your fork to your laptop.
-- Commit **working** code early and often (it is the best way that you can save your work).
+- Don't forget to commit **working** code early and often.
 - Leave comments that describe your work.
 - Read the tasks carefully, and do them one by one. 
-- After you are finished, submit a pull request following the steps that you have learned (guidelines for how to submit a pull request are in [Pull Request[Lecture Notes]](https://learn.makeen.ps/courses/take/introduction-to-javascript/multimedia/12105625-day-3-pull-requests-lecture-notes)).
+- After you are finished, submit a pull request following the steps that you have learned.
 
-# Online Store Part-1
+# Online Store Part-2
 ### Project Description 
 We need to design a system for an online store and we need your help to set the structure.
 - The store has **different departments**. There are departments for flowers, clothes, makeup, etc.
 - Every department has a set of different products and every product has different properties such as `price`, `name`, `department name`, and more.
 
 ### Requirements
-* **Task-1:** Declare 3 objects describing products that have at least 3 properties.
-    **Example:**
-    ```javascript
-    let handbag = {
-        color: "black",
-        size: "small",
-        price: 20
-    };
-    ```
-* **Task-2:** Your customers will be happier if they can see your products. Can you add another property to your product object for the image URL?
-    **Example:**
-	```javascript
-	handbag.imgSrc = 'https://p4.wallpaperbetter.com/wallpaper/233/2/545/church-cross-holy-city-jerusalem-wallpaper-preview.jpg';
-	```
+* **Task-1:** Create a helper function called `addNewProperty()` that gives you the ability to add new property to an object. The function should take three inputs: the object, propert name, and property value. (You can use this helper function in the other tasks)
 
-* **Task-3:** Cool, Now describe your product to help customers find it by printing out the value of your object properties using dot and bracket notation:
-	**Example:**
-	```javascript
-	console.log(`Big sale on the ${handbag.color} handbags, they are available now just for ${handbag['price']}$`);
-	```
-* **Task-4:** Add one more properties to your object using dot notation.
-    **Example:**
-    ```javascript
-    handbag.brand = "chanel";
+* **Task-2:** Write a function called `jewelryInfo()` that prints all the information of the jewelry array.
+    **Output example:**
+    ```
+    There are 3 categories in jewelry.
+    1. There are 14 rings sold for 9$ each
+    2. There are 25 bracelete sold for 14$ each
+    3. There are 4 earings sold for 2$ each
     ```
 
-* **Task-5:** Create an array named `jewelry` for the jewelry category.
-* **Task-6:** Add three subcategories (`rings`, `bracelets` and `earrings`) as objects in this array. Every subcategory has three properties: `name`, `inventory` (which is the number of the products in the current subcategory), and `price`.
+* **Task-3:** Write a function called `getJewerlySubcategories()` that prints all the subcategories in the jewelry array.
 
-* **Task-7:** Now the owner has decided to make a 50% discount on all `jewelry` category products on Mother's Day. Your task is to change the price of each subcategory on the `jewelry` array.
+* **Task-4:** Refactor the discount code that you wrote in the previous phase to make it as a function called `makeDiscount(percent)`. You can give the function the percent of the discout instead of always being 50%.
 
-* **Task-8:** After the discount, the last subcategory in the `jewelry` array is sold out. Can you change the value for its `inventory` property to 0?
+* **Task-5:** Instead of updating the inventory and the price manualy, write function called `updateInventory(subCategory, newInventory)` and `updatePrice(subCategory, newPrice)` to do that.
 
-* **Task-9:** Good news, there are 35 necklaces available now just for $14. Can you add them as another subcategory to the `jewelry` array?
+* **Task-6:** In the previous phase you added a new subcategory in the jewelry array. Now create a function to do this thing called `addSubCategory(name, inventory, price)`
