@@ -11,9 +11,9 @@ This is phase 2 of the store project. In this phase you will optimize your code 
 
 # Online Store Part-2
 ### Project Description 
-We need to design a system for an online store and we need your help to set the structure.
-- The store has **different departments**. There are departments for flowers, clothes, makeup, etc.
-- Every department has a set of different products and every product has different properties such as `price`, `name`, `department name`, and more.
+We need to optimize the online store we've built using functions and helper functions.
+
+Using the functions we would be able to make the project more readable, and avoid code repetition.
 
 ### Requirements
 * **Task-1:** Create a helper function called `addNewProperty()` that gives you the ability to add new property to an object. The function should take three inputs: the object, propert name, and property value. (You can use this helper function in the other tasks)
