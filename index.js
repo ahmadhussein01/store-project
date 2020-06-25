@@ -81,4 +81,3 @@ let necklaces = {
     price: 14
 };
 jewelry.push(necklaces);
-console.log(jewelry);
