@@ -16,21 +16,95 @@ We need to design a system for an online store and we need your help to set the 
 - Every department has a set of different products and every product has different properties such as `price`, `name`, `department name`, and more.
 
 ### Requirements
-* **Task-1:** Create a helper function called `addNewProperty()` that gives you the ability to add new property to an object. The function should take three inputs: the object, propert name, and property value. (You can use this helper function in the other tasks)
+* **Task-1:** For the first task, we need to declare an empty array called `jewelry`. Then create a function called `constructJewelry` that describes the subcategories we have in the jewelry array. Each subcategory should have at least three properties: `name`, `inventory`, and `price`.
+  
+  **Example:**
+  ```javascript
+  jewelry = [
+    {
+      name: "handbags",
+      inventory: 34,
+      price: 20
+    },
+    {
+      name: "rings",
+      inventory: 26,
+      price: 9.99
+    }
+  ];
+  ```
 
-* **Task-2:** Write a function called `jewelryInfo()` that prints all the information of the jewelry array.
-    **Output example:**
+* **Task-2:** Create a helper function called `addNewProperty` that gives you the ability to add new property to an object (You can use this helper function in the other tasks).
+
+  * **Inputs:** The function should take three parameters: the `object`, `propertyName` of type string, and `propertyValue` of any type.
+  * **Outputs:** The function does not have to return any value. But it should print a success or a failure message.
+  * **Test Cases:**
+    ```javascript
+    addNewProperty(handbag, "brand", "chanel");
+    addNewProperty(handbag, "priceBeforeSale", 4.75);
+    ```
+
+
+* **Task-3:** We need to print the information of all of the categories in the jewelry array. To do that, write a function called `getJewelryInfo`.
+
+  * **Inputs:** This function does not take any parameter.
+  * **Outputs:** A string that includes the following information:
+    * Number of categories.
+    * Name of each category.
+    * Amount of each category.
+    * Price of each category.
+    * And any other information you like to add.
+  * **Output example:**
     ```
     There are 3 categories in jewelry.
-    1. There are 14 rings sold for 9$ each
-    2. There are 25 bracelete sold for 14$ each
-    3. There are 4 earings sold for 2$ each
+     - 14 rings sold for 9$ each.
+     - 25 bracelete sold for 14$ each.
+     - 4 earings sold for 2$ each.
     ```
 
-* **Task-3:** Write a function called `getJewerlySubcategories()` that prints all the subcategories in the jewelry array.
+* **Task-4:** Refactor the discount code that you wrote in the previous phase of this project to make it in a function called `makeDiscount`. You can give the function the percent of the discount instead of always being 50%.
 
-* **Task-4:** Refactor the discount code that you wrote in the previous phase to make it as a function called `makeDiscount(percent)`. You can give the function the percent of the discout instead of always being 50%.
+  * **Inputs:** This function takes one parameter, which is `percent` of type number.
+  * **Outputs:** This function does not have to return any value. But it should change the prices of each category in the jewelry array depending on the `percent` parameter and print a success or a failure message.
+  * **Test Cases:**
+    ```javascript
+    makeDiscount(0.5); // We except to see a 50% drop in all categories prices
+    makeDiscount(0.2); // We except to see a 20% drop in all categories prices
+    ```
 
-* **Task-5:** Instead of updating the inventory and the price manualy, write function called `updateInventory(subCategory, newInventory)` and `updatePrice(subCategory, newPrice)` to do that.
+* **Task-5:** Instead of updating the inventory of subcategories manualy, write a function called `updateInventory` to do that.
 
-* **Task-6:** In the previous phase you added a new subcategory in the jewelry array. Now create a function to do this thing called `addSubCategory(name, inventory, price)`
+  * **Inputs:** This function takes two parameters:
+    * `subCategory` of type string, which is the name of the subcategory we want to update.
+    * `newInventory` of type number, which is the new inventory amount.
+  * **Outputs:** This function does not have to return any value.
+  * **Test Cases:**
+    ```javascript
+    updateInventory("rings", 25);
+    updateInventory("earings", 0);
+    ```
+
+* **Task-6:** Instead of updating the price of subcategories manualy, write a function called `updatePrice` to do that.
+
+  * **Inputs:** This function takes two parameters:
+    * `subCategory` of type string, which is the name of the subcategory we want to update.
+    * `newPrice` of type number, which is the new price.
+  * **Outputs:** This function does not have to return any value. But it should print a success or a failure message.
+  * **Test Cases:**
+    ```javascript
+    updatePrice("rings", 9.5);
+    updatePrice("earings", 6);
+    ```
+
+* **Task-7:** In the previous phase of this project you have added a new subcategory in the jewelry array manualy. Now create a function called `addSubCategory` to do this.
+
+  * **Inputs:** This function takes three parameters:
+    * `name` of type string, which is the name of the subcategory.
+    * `inventory` of type number, which is the amount of this subcategory in the store.
+    * `price` of type number, which is the price of each piece of this subcategory.
+  * **Outputs:** This function does not have to return any value. But it should print a success or a failure message.
+  * **Test Cases:**
+    ```javascript
+    addSubCategory("bracelets", 15, 20);
+    addSubCategory("watches", 10, 49.99);
+    ```
