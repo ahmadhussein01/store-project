@@ -71,7 +71,7 @@ if (mothersDay=="mother Day's"){ //Checking if true
 
 //Task 8
 jewelry[2].inventory= 0;
-console.log(jewelry[2].inventory); //Testing
+
 
 //Task 9 
 //Iniate the Object properties then Push into Array
