@@ -11,9 +11,7 @@ This is phase 2 of the store project. In this phase you will optimize your code 
 
 # Online Store Part-2
 ### Project Description 
-We need to design a system for an online store and we need your help to set the structure.
-- The store has **different departments**. There are departments for flowers, clothes, makeup, etc.
-- Every department has a set of different products and every product has different properties such as `price`, `name`, `department name`, and more.
+We need to optimize the online store we've built using functions and helper functions. Using the functions we would be able to make the project more readable, and avoid code repetition.
 
 ### Requirements
 * **Task-1:** For the first task, we need to declare an empty array called `jewelry`. Then create a function called `constructJewelry` that describes the subcategories we have in the jewelry array. Each subcategory should have at least three properties: `name`, `inventory`, and `price`.
